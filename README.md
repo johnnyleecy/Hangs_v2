@@ -148,3 +148,4 @@ src/app/services/[category]/page.tsx           分類路由
 src/app/services/[category]/[service]/page.tsx 詳情路由
 src/app/catalog.css            分類與詳情頁樣式
 ```
+# Hangs_v2
