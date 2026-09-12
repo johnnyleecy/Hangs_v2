@@ -3,6 +3,11 @@ import { ArrowDown, ArrowUpRight, BrainCircuit, Workflow, Database, Check, FileT
 import type { Solution } from '@/lib/solutions';
 import { ConsultButton } from './site-shell';
 import { Breadcrumbs, Eyebrow, PageCTA, PageFAQ, PageHeading, PageProcess, PageSchema, RelatedSolutions } from './page-blocks';
+import AudienceSolutions from './audience-solutions';
+import FaqAccordion from './faq-accordion';
+import { getFaqs } from '@/lib/data-access';
+
+const audienceLabel: Record<string, string> = { solo: '一人公司', sme: '中小企', enterprise: '企業團隊' };
 
 function WorkflowVisual({ data }: { data: Solution }) {
   const icons = [Database, BrainCircuit, ShieldCheck];
@@ -16,7 +21,8 @@ function ScenarioDiagram({ index, slug }: { index: number; slug: string }) {
   return <div className={`scenario-diagram diagram-${index}`} aria-label={`${labels[index][0]}經 AI 輔助整理成${labels[index][1]}，概念示意`}><span className="diagram-node"><FileText size={19} strokeWidth={1.4} /><small>{labels[index][0]}</small></span><span className="diagram-line" /><span className="diagram-ai"><BrainCircuit size={25} strokeWidth={1.4} /></span><span className="diagram-line" /><span className="diagram-node"><Layers3 size={19} strokeWidth={1.4} /><small>{labels[index][1]}</small></span><span className="diagram-caption">ILLUSTRATIVE WORKFLOW</span></div>;
 }
 
-export default function SolutionPage({ data }: { data: Solution }) {
+export default async function SolutionPage({ data }: { data: Solution }) {
+  const allFaqs = await getFaqs();
   const icons = [Workflow, BrainCircuit, Database];
   return <><PageSchema title={`${data.label} AI 解決方案`} description={data.description} path={`/solutions/${data.slug}`} faqs={data.faqs} /><main id="main" className={`solution-page solution-${data.slug}`}>
     <section className="solution-hero"><div className="container"><Breadcrumbs label={data.label} solution /><div className="solution-hero-grid"><div className="solution-hero-copy"><p className="hero-announcement"><span className="online-dot" />{data.eyebrow}</p><h1>{data.title[0]}<br /><span>{data.title[1]}<svg viewBox="0 0 420 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12Q203 1 414 10" /></svg></span></h1><p className="solution-lead">{data.description}</p><div className="hero-actions"><ConsultButton /><a href="#solutions" className="button button-secondary">查看應用方向<ArrowDown size={16} /></a></div><p className="solution-hero-note"><Check size={13} />{data.note}</p></div><WorkflowVisual data={data} /></div><div className="solution-hero-bottom"><span>{data.english}</span><a href="#solutions">從你的工作開始<ArrowDown size={13} /></a></div></div></section>
@@ -26,6 +32,6 @@ export default function SolutionPage({ data }: { data: Solution }) {
     <section id="transfer" className="section transfer-section"><div className="container"><div className="transfer-panel"><div className="transfer-copy"><Eyebrow>BUILD CAPABILITY, NOT DEPENDENCY</Eyebrow><h2>{data.transferTitle[0]}<br /><span>{data.transferTitle[1]}</span></h2>{data.transferText.map(text => <p key={text}>{text}</p>)}<a href="#engagement" className="text-link">選擇適合的合作方式<ArrowUpRight size={16} /></a></div><div className="transfer-capabilities"><div className="transfer-panel-top"><span><GraduationCap size={17} />{data.slug === 'enterprise' ? '從治理到承接' : '讓能力留在你的團隊'}</span><small>THE HANGS APPROACH</small></div>{data.transfer.map((item, index) => <div className="transfer-capability" key={item.title}><span className="capability-number">0{index + 1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div><CircleCheck size={18} /></div>)}<div className="transfer-panel-bottom"><ShieldCheck size={14} />可自行處理與需技術支援的範圍，清楚約定。</div></div></div></div></section>
     <section id="process" className="section solution-process-section"><div className="container"><PageHeading eyebrow="PROVE THE VALUE. THEN MOVE FORWARD." title={data.processTitle} intro={data.processIntro} /><PageProcess steps={data.steps} /></div></section>
     <section id="engagement" className="section engagement-section"><div className="container"><PageHeading eyebrow="A WAY OF WORKING THAT FITS YOU" title={data.modesTitle} intro={data.modesIntro} /><div className="solution-three-grid">{data.modes.map((mode, index) => <article className={`engagement-card ${index === 1 ? 'engagement-highlight' : ''}`} key={mode.title}><span className="engagement-label">{mode.label}</span><h3>{mode.title}</h3><p>{mode.text}</p><ul>{mode.points.map(point => <li key={point}><Check size={14} />{point}</li>)}</ul><div className="engagement-foot"><span>{mode.foot}</span><ConsultButton className="text-link">討論這個方向</ConsultButton></div></article>)}</div><div className="solution-tech-strip"><span>按需要選用技術，而非為了技術而技術</span><div>{data.technologies.map(tech => <span key={tech}>{tech}</span>)}</div></div></div></section>
-    <PageFAQ items={data.faqs} /><PageCTA title={data.ctaTitle} text={data.ctaText} checklist={data.contactList} /><RelatedSolutions current={data.slug} /><div className="solution-back-home"><Link href="/">回到首頁<ArrowUpRight size={13} /></Link></div>
+    <PageFAQ items={data.faqs} /><PageCTA title={data.ctaTitle} text={data.ctaText} checklist={data.contactList} /><AudienceSolutions slug={data.slug} /><FaqAccordion items={allFaqs.filter(f => !f.audience || f.audience.includes(audienceLabel[data.slug] ?? '一人公司'))} title="常見問題" /><RelatedSolutions current={data.slug} /><div className="solution-back-home"><Link href="/">回到首頁<ArrowUpRight size={13} /></Link></div>
   </main></>;
 }

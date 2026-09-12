@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const { category } = await params;
   const data = getCategory(category);
   if (!data) notFound();
-  return pageMetadata(`${data.title}｜服務介紹`, data.description, `/services/${category}`);
+  return pageMetadata(`${data.title}｜解決方案`, data.description, `/services/${category}`);
 }
 export default async function Page({ params }: { params: Promise<{ category: string }> }) {
   const { category } = await params;

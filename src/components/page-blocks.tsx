@@ -9,7 +9,7 @@ export function PageHeading({ eyebrow, title, intro }: { eyebrow: string; title:
   return <div className="section-heading solution-section-heading"><div><Eyebrow>{eyebrow}</Eyebrow><h2>{title[0]}<br />{title[1]}</h2></div><p className="section-description">{intro}</p></div>;
 }
 export function Breadcrumbs({ label, solution = false }: { label: string; solution?: boolean }) {
-  return <nav className="breadcrumbs" aria-label="麵包屑導覽"><Link href="/">首頁</Link><span aria-hidden="true">/</span>{solution && <><span>解決方案</span><span aria-hidden="true">/</span></>}<span aria-current="page">{label}</span></nav>;
+  return <nav className="breadcrumbs" aria-label="麵包屑導覽"><Link href="/">首頁</Link><span aria-hidden="true">/</span>{solution && <><span>服務對象</span><span aria-hidden="true">/</span></>}<span aria-current="page">{label}</span></nav>;
 }
 export function PageSchema({ title, description, path, faqs, breadcrumb }: { title: string; description: string; path: string; faqs: readonly FAQ[]; breadcrumb?: { name: string; path?: string }[] }) {
   const url = siteUrl ? `${siteUrl}${path}` : undefined;
@@ -35,5 +35,5 @@ export function PageProcess({ steps }: { steps: { title: string; text: string; o
 }
 export function RelatedSolutions({ current }: { current?: string }) {
   const links = [{ slug: 'solo', label: '一人公司', text: '讓 AI 成為你的日常助手' }, { slug: 'sme', label: '中小企業', text: '接通流程，培養團隊能力' }, { slug: 'enterprise', label: '企業團隊', text: '把治理與擴展一起規劃' }];
-  return <div className="container related-solutions"><span>另一個起點，也可能適合你。</span><div>{links.filter(item => item.slug !== current).map(item => <Link key={item.slug} href={`/solutions/${item.slug}`}><span><strong>{item.label}</strong><small>{item.text}</small></span><ArrowUpRight size={17} /></Link>)}{current && <Link href="/services"><span><strong>服務介紹</strong><small>從技術到交付，一次了解</small></span><ArrowUpRight size={17} /></Link>}</div></div>;
+  return <div className="container related-solutions"><span>另一個起點，也可能適合你。</span><div>{links.filter(item => item.slug !== current).map(item => <Link key={item.slug} href={`/solutions/${item.slug}`}><span><strong>{item.label}</strong><small>{item.text}</small></span><ArrowUpRight size={17} /></Link>)}{current && <Link href="/services"><span><strong>解決方案</strong><small>從技術到交付，一次了解</small></span><ArrowUpRight size={17} /></Link>}</div></div>;
 }
