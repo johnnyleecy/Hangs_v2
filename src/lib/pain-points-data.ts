@@ -3,10 +3,15 @@ export type PainPoint = {
   title: string;
   cat: string;
   audience: string[];
+  body?: string;
+  tags?: string[];
+  ratings?: { level: string; stars: number; desc: string; visible: boolean; solutionId?: number; courseId?: number }[];
+  ctaText?: string;
+  nextPostId?: string;
 };
 
 export const painPoints: PainPoint[] = [
-  { id: 1, title: '開完會，咩都唔記得，下星期又傾返同一件事', cat: '文書', audience: ['一人公司', '中小企', '企業團隊'] },
+  { id: 1, title: '開完會，咩都唔記得，下星期又傾返同一件事', cat: '文書', audience: ['一人公司', '中小企', '企業團隊'], body: '每次開完會，啲決定、負責人、死線，散會一刻就開始模糊。下星期再開，又由頭傾返同一件事。你唔係懶，係冇一個人喺現場逐句幫你記低「邊個負責、幾時交、有咩要跟進」。', tags: ['開會', '文書', '秘書'], ratings: [{ level: '低效', stars: 2, desc: '成本 $0 但忽略時間成本、隨時被 AI 幻覺坑倒、客戶資料上網有私隱風險', visible: true }, { level: '中效', stars: 4, desc: '一次性費用＋高度保密資料留本機＋精準調控＋三個月保養＋另設月費計劃', visible: true, solutionId: 22 }, { level: '高效', stars: 5, desc: '團隊共用數據、客製化數據存取、保密高效方便', visible: true, courseId: 1 }], ctaText: '把重點先生成，等律師簽名', nextPostId: '2' },
   { id: 2, title: '通告出咗，同事都唔知要做咩', cat: '文書', audience: ['中小企', '企業團隊'] },
   { id: 3, title: '簽約要等律師成個星期', cat: '法律', audience: ['一人公司', '中小企'] },
   { id: 4, title: '報告寫咗三日，老闆話冇重點', cat: '文書', audience: ['一人公司', '中小企', '企業團隊'] },

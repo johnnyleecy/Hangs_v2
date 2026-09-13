@@ -1109,730 +1109,1045 @@
       "result": "資料全程留在本機"
     }
   ],
-  "tags": [
+  "courses": [
     {
       "id": 1,
-      "name": "AI"
+      "title": "AI 秘書實戰班",
+      "desc": "把舊電腦翻新成專責會議紀錄、文件草擬的 AI 秘書。",
+      "content": "手把手教你用舊電腦建立 AI 秘書，處理會議紀錄、電郵草擬、文件整理。涵蓋 Prompt 工程與本地部署，資料留喺本機。",
+      "tool": [
+        "AI",
+        "Agent"
+      ],
+      "role": [
+        "秘書",
+        "行政"
+      ],
+      "audience": [
+        "一人公司",
+        "中小企"
+      ],
+      "painPointIds": [
+        1,
+        4,
+        5
+      ],
+      "solutionIds": [
+        22,
+        21
+      ],
+      "tags": [
+        "秘書",
+        "會議",
+        "文書"
+      ],
+      "nitpp": true,
+      "vtc": true,
+      "yt": "",
+      "duration": "4 小時",
+      "price": "面議"
     },
     {
       "id": 2,
-      "name": "顧問"
+      "title": "Python 行政自動化入門",
+      "desc": "用 Python 自動處理重複的行政流程，釋放人手。",
+      "content": "從零開始學 Python，針對行政重複工作（資料輸入、表單填寫、報表彙整）做自動化。手把手跟住揼，唔使寫 code 底。",
+      "tool": [
+        "Python"
+      ],
+      "role": [
+        "行政",
+        "會計"
+      ],
+      "audience": [
+        "中小企",
+        "企業團隊"
+      ],
+      "painPointIds": [
+        7,
+        10,
+        22
+      ],
+      "solutionIds": [
+        11,
+        14
+      ],
+      "tags": [
+        "Python",
+        "自動化",
+        "行政"
+      ],
+      "nitpp": true,
+      "vtc": false,
+      "yt": "",
+      "duration": "8 小時",
+      "price": "面議"
     },
     {
       "id": 3,
-      "name": "導入"
+      "title": "MCP 企業 Agent 實作",
+      "desc": "把 AI Agent 接上企業工具，建立跨部門 AI 同事。",
+      "content": "進階課程，教你用 MCP 將 AI Agent 接上內部系統與數據庫，建立可共用、可量化的 AI 同事。適合企業團隊。",
+      "tool": [
+        "MCP",
+        "Agent"
+      ],
+      "role": [
+        "行政",
+        "會計",
+        "秘書",
+        "法律顧問",
+        "推廣"
+      ],
+      "audience": [
+        "企業團隊"
+      ],
+      "painPointIds": [
+        19,
+        22,
+        29
+      ],
+      "solutionIds": [
+        1,
+        15
+      ],
+      "tags": [
+        "MCP",
+        "Agent",
+        "企業"
+      ],
+      "nitpp": true,
+      "vtc": true,
+      "yt": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "12 小時",
+      "price": "面議"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "AI",
+      "group": "場景"
+    },
+    {
+      "id": 2,
+      "name": "顧問",
+      "group": "行業"
+    },
+    {
+      "id": 3,
+      "name": "導入",
+      "group": "場景"
     },
     {
       "id": 4,
-      "name": "生成式AI"
+      "name": "生成式AI",
+      "group": "場景"
     },
     {
       "id": 5,
-      "name": "LLM"
+      "name": "LLM",
+      "group": "場景"
     },
     {
       "id": 6,
-      "name": "Chatbot"
+      "name": "Chatbot",
+      "group": "場景"
     },
     {
       "id": 7,
-      "name": "數據分析"
+      "name": "數據分析",
+      "group": "場景"
     },
     {
       "id": 8,
-      "name": "BI"
+      "name": "BI",
+      "group": "場景"
     },
     {
       "id": 9,
-      "name": "預測"
+      "name": "預測",
+      "group": "場景"
     },
     {
       "id": 10,
-      "name": "客服"
+      "name": "客服",
+      "group": "行業"
     },
     {
       "id": 11,
-      "name": "自動化"
+      "name": "自動化",
+      "group": "場景"
     },
     {
       "id": 12,
-      "name": "內容生成"
+      "name": "內容生成",
+      "group": "場景"
     },
     {
       "id": 13,
-      "name": "行銷"
+      "name": "行銷",
+      "group": "痛症類別"
     },
     {
       "id": 14,
-      "name": "文案"
+      "name": "文案",
+      "group": "場景"
     },
     {
       "id": 15,
-      "name": "影像辨識"
+      "name": "影像辨識",
+      "group": "場景"
     },
     {
       "id": 16,
-      "name": "CV"
+      "name": "CV",
+      "group": "場景"
     },
     {
       "id": 17,
-      "name": "品管"
+      "name": "品管",
+      "group": "場景"
     },
     {
       "id": 18,
-      "name": "語音"
+      "name": "語音",
+      "group": "場景"
     },
     {
       "id": 19,
-      "name": "ASR"
+      "name": "ASR",
+      "group": "場景"
     },
     {
       "id": 20,
-      "name": "TTS"
+      "name": "TTS",
+      "group": "場景"
     },
     {
       "id": 21,
-      "name": "NLP"
+      "name": "NLP",
+      "group": "場景"
     },
     {
       "id": 22,
-      "name": "文字分析"
+      "name": "文字分析",
+      "group": "場景"
     },
     {
       "id": 23,
-      "name": "情緒"
+      "name": "情緒",
+      "group": "場景"
     },
     {
       "id": 24,
-      "name": "ML"
+      "name": "ML",
+      "group": "場景"
     },
     {
       "id": 25,
-      "name": "模型"
+      "name": "模型",
+      "group": "場景"
     },
     {
       "id": 26,
-      "name": "知識庫"
+      "name": "知識庫",
+      "group": "場景"
     },
     {
       "id": 27,
-      "name": "RAG"
+      "name": "RAG",
+      "group": "場景"
     },
     {
       "id": 28,
-      "name": "搜尋"
+      "name": "搜尋",
+      "group": "場景"
     },
     {
       "id": 29,
-      "name": "RPA"
+      "name": "RPA",
+      "group": "場景"
     },
     {
       "id": 30,
-      "name": "行政"
+      "name": "行政",
+      "group": "痛症類別"
     },
     {
       "id": 31,
-      "name": "工作流"
+      "name": "工作流",
+      "group": "場景"
     },
     {
       "id": 32,
-      "name": "審批"
+      "name": "審批",
+      "group": "場景"
     },
     {
       "id": 33,
-      "name": "簽核"
+      "name": "簽核",
+      "group": "場景"
     },
     {
       "id": 34,
-      "name": "OCR"
+      "name": "OCR",
+      "group": "場景"
     },
     {
       "id": 35,
-      "name": "文件"
+      "name": "文件",
+      "group": "場景"
     },
     {
       "id": 36,
-      "name": "歸檔"
+      "name": "歸檔",
+      "group": "場景"
     },
     {
       "id": 37,
-      "name": "報表"
+      "name": "報表",
+      "group": "場景"
     },
     {
       "id": 38,
-      "name": "定時"
+      "name": "定時",
+      "group": "場景"
     },
     {
       "id": 39,
-      "name": "彙整"
+      "name": "彙整",
+      "group": "場景"
     },
     {
       "id": 40,
-      "name": "整合"
+      "name": "整合",
+      "group": "場景"
     },
     {
       "id": 41,
-      "name": "API"
+      "name": "API",
+      "group": "場景"
     },
     {
       "id": 42,
-      "name": "同步"
+      "name": "同步",
+      "group": "場景"
     },
     {
       "id": 43,
-      "name": "電子簽"
+      "name": "電子簽",
+      "group": "場景"
     },
     {
       "id": 44,
-      "name": "簽署"
+      "name": "簽署",
+      "group": "場景"
     },
     {
       "id": 45,
-      "name": "追蹤"
+      "name": "追蹤",
+      "group": "場景"
     },
     {
       "id": 46,
-      "name": "備份"
+      "name": "備份",
+      "group": "場景"
     },
     {
       "id": 47,
-      "name": "排程"
+      "name": "排程",
+      "group": "場景"
     },
     {
       "id": 48,
-      "name": "災難復原"
+      "name": "災難復原",
+      "group": "場景"
     },
     {
       "id": 49,
-      "name": "通知"
+      "name": "通知",
+      "group": "場景"
     },
     {
       "id": 50,
-      "name": "提醒"
+      "name": "提醒",
+      "group": "場景"
     },
     {
       "id": 51,
-      "name": "事件"
+      "name": "事件",
+      "group": "場景"
     },
     {
       "id": 52,
-      "name": "訂單"
+      "name": "訂單",
+      "group": "場景"
     },
     {
       "id": 53,
-      "name": "出貨"
+      "name": "出貨",
+      "group": "場景"
     },
     {
       "id": 54,
-      "name": "串接"
+      "name": "串接",
+      "group": "場景"
     },
     {
       "id": 55,
-      "name": "庫存"
+      "name": "庫存",
+      "group": "場景"
     },
     {
       "id": 56,
-      "name": "多通路"
+      "name": "多通路",
+      "group": "場景"
     },
     {
       "id": 57,
-      "name": "助手"
+      "name": "助手",
+      "group": "場景"
     },
     {
       "id": 58,
-      "name": "會議"
+      "name": "會議",
+      "group": "場景"
     },
     {
       "id": 59,
-      "name": "逐字稿"
+      "name": "逐字稿",
+      "group": "場景"
     },
     {
       "id": 60,
-      "name": "摘要"
+      "name": "摘要",
+      "group": "場景"
     },
     {
       "id": 61,
-      "name": "郵件"
+      "name": "郵件",
+      "group": "場景"
     },
     {
       "id": 62,
-      "name": "分類"
+      "name": "分類",
+      "group": "場景"
     },
     {
       "id": 63,
-      "name": "回覆"
+      "name": "回覆",
+      "group": "場景"
     },
     {
       "id": 64,
-      "name": "行事曆"
+      "name": "行事曆",
+      "group": "場景"
     },
     {
       "id": 65,
-      "name": "HR"
+      "name": "HR",
+      "group": "場景"
     },
     {
       "id": 66,
-      "name": "管理"
+      "name": "管理",
+      "group": "場景"
     },
     {
       "id": 67,
-      "name": "數位化"
+      "name": "數位化",
+      "group": "場景"
     },
     {
       "id": 68,
-      "name": "招聘"
+      "name": "招聘",
+      "group": "場景"
     },
     {
       "id": 69,
-      "name": "履歷"
+      "name": "履歷",
+      "group": "場景"
     },
     {
       "id": 70,
-      "name": "篩選"
+      "name": "篩選",
+      "group": "場景"
     },
     {
       "id": 71,
-      "name": "績效"
+      "name": "績效",
+      "group": "場景"
     },
     {
       "id": 72,
-      "name": "評估"
+      "name": "評估",
+      "group": "場景"
     },
     {
       "id": 73,
-      "name": "數據"
+      "name": "數據",
+      "group": "痛症類別"
     },
     {
       "id": 74,
-      "name": "排班"
+      "name": "排班",
+      "group": "場景"
     },
     {
       "id": 75,
-      "name": "調度"
+      "name": "調度",
+      "group": "場景"
     },
     {
       "id": 76,
-      "name": "法規"
+      "name": "法規",
+      "group": "場景"
     },
     {
       "id": 77,
-      "name": "薪資"
+      "name": "薪資",
+      "group": "場景"
     },
     {
       "id": 78,
-      "name": "計算"
+      "name": "計算",
+      "group": "場景"
     },
     {
       "id": 79,
-      "name": "出糧"
+      "name": "出糧",
+      "group": "場景"
     },
     {
       "id": 80,
-      "name": "培訓"
+      "name": "培訓",
+      "group": "場景"
     },
     {
       "id": 81,
-      "name": "學習"
+      "name": "學習",
+      "group": "場景"
     },
     {
       "id": 82,
-      "name": "推薦"
+      "name": "推薦",
+      "group": "場景"
     },
     {
       "id": 83,
-      "name": "會計"
+      "name": "會計",
+      "group": "角色"
     },
     {
       "id": 84,
-      "name": "開票"
+      "name": "開票",
+      "group": "場景"
     },
     {
       "id": 85,
-      "name": "入帳"
+      "name": "入帳",
+      "group": "場景"
     },
     {
       "id": 86,
-      "name": "發票"
+      "name": "發票",
+      "group": "場景"
     },
     {
       "id": 87,
-      "name": "核對"
+      "name": "核對",
+      "group": "場景"
     },
     {
       "id": 88,
-      "name": "報稅"
+      "name": "報稅",
+      "group": "場景"
     },
     {
       "id": 89,
-      "name": "稅務"
+      "name": "稅務",
+      "group": "場景"
     },
     {
       "id": 90,
-      "name": "申報"
+      "name": "申報",
+      "group": "場景"
     },
     {
       "id": 91,
-      "name": "預算"
+      "name": "預算",
+      "group": "場景"
     },
     {
       "id": 92,
-      "name": "財務"
+      "name": "財務",
+      "group": "場景"
     },
     {
       "id": 93,
-      "name": "現金流"
+      "name": "現金流",
+      "group": "場景"
     },
     {
       "id": 94,
-      "name": "監控"
+      "name": "監控",
+      "group": "場景"
     },
     {
       "id": 95,
-      "name": "預警"
+      "name": "預警",
+      "group": "場景"
     },
     {
       "id": 96,
-      "name": "報銷"
+      "name": "報銷",
+      "group": "場景"
     },
     {
       "id": 97,
-      "name": "審核"
+      "name": "審核",
+      "group": "場景"
     },
     {
       "id": 98,
-      "name": "核銷"
+      "name": "核銷",
+      "group": "場景"
     },
     {
       "id": 99,
-      "name": "雲端"
+      "name": "雲端",
+      "group": "場景"
     },
     {
       "id": 100,
-      "name": "遷移"
+      "name": "遷移",
+      "group": "場景"
     },
     {
       "id": 101,
-      "name": "AWS"
+      "name": "AWS",
+      "group": "場景"
     },
     {
       "id": 102,
-      "name": "資安"
+      "name": "資安",
+      "group": "場景"
     },
     {
       "id": 103,
-      "name": "健診"
+      "name": "健診",
+      "group": "場景"
     },
     {
       "id": 104,
-      "name": "弱點掃描"
+      "name": "弱點掃描",
+      "group": "場景"
     },
     {
       "id": 105,
-      "name": "滲透測試"
+      "name": "滲透測試",
+      "group": "場景"
     },
     {
       "id": 106,
-      "name": "安全"
+      "name": "安全",
+      "group": "場景"
     },
     {
       "id": 107,
-      "name": "攻擊"
+      "name": "攻擊",
+      "group": "場景"
     },
     {
       "id": 108,
-      "name": "DevOps"
+      "name": "DevOps",
+      "group": "場景"
     },
     {
       "id": 109,
-      "name": "CI/CD"
+      "name": "CI/CD",
+      "group": "場景"
     },
     {
       "id": 110,
-      "name": "交付"
+      "name": "交付",
+      "group": "場景"
     },
     {
       "id": 111,
-      "name": "管線"
+      "name": "管線",
+      "group": "場景"
     },
     {
       "id": 112,
-      "name": "Docker"
+      "name": "Docker",
+      "group": "場景"
     },
     {
       "id": 113,
-      "name": "K8s"
+      "name": "K8s",
+      "group": "場景"
     },
     {
       "id": 114,
-      "name": "容器"
+      "name": "容器",
+      "group": "場景"
     },
     {
       "id": 115,
-      "name": "網站"
+      "name": "網站",
+      "group": "場景"
     },
     {
       "id": 116,
-      "name": "開發"
+      "name": "開發",
+      "group": "場景"
     },
     {
       "id": 117,
-      "name": "前端"
+      "name": "前端",
+      "group": "場景"
     },
     {
       "id": 118,
-      "name": "電商"
+      "name": "電商",
+      "group": "行業"
     },
     {
       "id": 119,
-      "name": "金流"
+      "name": "金流",
+      "group": "場景"
     },
     {
       "id": 120,
-      "name": "物流"
+      "name": "物流",
+      "group": "行業"
     },
     {
       "id": 121,
-      "name": "CRM"
+      "name": "CRM",
+      "group": "場景"
     },
     {
       "id": 122,
-      "name": "客戶"
+      "name": "客戶",
+      "group": "場景"
     },
     {
       "id": 123,
-      "name": "銷售"
+      "name": "銷售",
+      "group": "場景"
     },
     {
       "id": 124,
-      "name": "ERP"
+      "name": "ERP",
+      "group": "場景"
     },
     {
       "id": 125,
-      "name": "IoT"
+      "name": "IoT",
+      "group": "場景"
     },
     {
       "id": 126,
-      "name": "聯網"
+      "name": "聯網",
+      "group": "場景"
     },
     {
       "id": 127,
-      "name": "數據採集"
+      "name": "數據採集",
+      "group": "場景"
     },
     {
       "id": 128,
-      "name": "大數據"
+      "name": "大數據",
+      "group": "場景"
     },
     {
       "id": 129,
-      "name": "處理"
+      "name": "處理",
+      "group": "場景"
     },
     {
       "id": 130,
-      "name": "分析"
+      "name": "分析",
+      "group": "場景"
     },
     {
       "id": 131,
-      "name": "支援"
+      "name": "支援",
+      "group": "場景"
     },
     {
       "id": 132,
-      "name": "維運"
+      "name": "維運",
+      "group": "場景"
     },
     {
       "id": 133,
-      "name": "開會"
+      "name": "開會",
+      "group": "場景"
     },
     {
       "id": 134,
-      "name": "文書"
+      "name": "文書",
+      "group": "痛症類別"
     },
     {
       "id": 135,
-      "name": "一人公司"
+      "name": "一人公司",
+      "group": "客層"
     },
     {
       "id": 136,
-      "name": "秘書"
+      "name": "秘書",
+      "group": "角色"
     },
     {
       "id": 137,
-      "name": "教育"
+      "name": "教育",
+      "group": "行業"
     },
     {
       "id": 138,
-      "name": "專業服務"
+      "name": "專業服務",
+      "group": "行業"
     },
     {
       "id": 139,
-      "name": "本地部署"
+      "name": "本地部署",
+      "group": "場景"
     },
     {
       "id": 140,
-      "name": "私隱"
+      "name": "私隱",
+      "group": "場景"
     },
     {
       "id": 141,
-      "name": "保密"
+      "name": "保密",
+      "group": "場景"
     },
     {
       "id": 142,
-      "name": "法律"
+      "name": "法律",
+      "group": "痛症類別"
     },
     {
       "id": 143,
-      "name": "通告"
+      "name": "Python",
+      "group": "場景"
     },
     {
       "id": 144,
-      "name": "合約"
+      "name": "MCP",
+      "group": "場景"
     },
     {
       "id": 145,
-      "name": "報告"
+      "name": "Agent",
+      "group": "場景"
     },
     {
       "id": 146,
-      "name": "書信"
+      "name": "企業",
+      "group": "場景"
     },
     {
       "id": 147,
-      "name": "客戶名單"
+      "name": "通告",
+      "group": "場景"
     },
     {
       "id": 148,
-      "name": "圖表"
+      "name": "合約",
+      "group": "場景"
     },
     {
       "id": 149,
-      "name": "對數"
+      "name": "報告",
+      "group": "場景"
     },
     {
       "id": 150,
-      "name": "簡報"
+      "name": "書信",
+      "group": "場景"
     },
     {
       "id": 151,
-      "name": "提案"
+      "name": "客戶名單",
+      "group": "場景"
     },
     {
       "id": 152,
-      "name": "演講"
+      "name": "圖表",
+      "group": "場景"
     },
     {
       "id": 153,
-      "name": "查證"
+      "name": "對數",
+      "group": "場景"
     },
     {
       "id": 154,
-      "name": "資料"
+      "name": "簡報",
+      "group": "痛症類別"
     },
     {
       "id": 155,
-      "name": "來源"
+      "name": "提案",
+      "group": "場景"
     },
     {
       "id": 156,
-      "name": "決策"
+      "name": "演講",
+      "group": "場景"
     },
     {
       "id": 157,
-      "name": "電郵"
+      "name": "查證",
+      "group": "痛症類別"
     },
     {
       "id": 158,
-      "name": "匯報"
+      "name": "資料",
+      "group": "場景"
     },
     {
       "id": 159,
-      "name": "格式轉換"
+      "name": "來源",
+      "group": "場景"
     },
     {
       "id": 160,
-      "name": "語氣"
+      "name": "決策",
+      "group": "場景"
     },
     {
       "id": 161,
-      "name": "社媒"
+      "name": "電郵",
+      "group": "場景"
     },
     {
       "id": 162,
-      "name": "新聞稿"
+      "name": "匯報",
+      "group": "場景"
     },
     {
       "id": 163,
-      "name": "活動"
+      "name": "格式轉換",
+      "group": "場景"
     },
     {
       "id": 164,
-      "name": "專案"
+      "name": "語氣",
+      "group": "場景"
     },
     {
       "id": 165,
-      "name": "流程"
+      "name": "社媒",
+      "group": "場景"
     },
     {
       "id": 166,
-      "name": "清單"
+      "name": "新聞稿",
+      "group": "場景"
     },
     {
       "id": 167,
-      "name": "概念"
+      "name": "活動",
+      "group": "場景"
     },
     {
       "id": 168,
-      "name": "舊腦翻新"
+      "name": "專案",
+      "group": "痛症類別"
     },
     {
       "id": 169,
-      "name": "AI 同事"
+      "name": "流程",
+      "group": "場景"
     },
     {
       "id": 170,
-      "name": "舊電腦"
+      "name": "清單",
+      "group": "場景"
     },
     {
       "id": 171,
-      "name": "價錢"
+      "name": "概念",
+      "group": "場景"
     },
     {
       "id": 172,
-      "name": "方案"
+      "name": "舊腦翻新",
+      "group": "場景"
     },
     {
       "id": 173,
-      "name": "角色"
+      "name": "AI 同事",
+      "group": "場景"
     },
     {
       "id": 174,
-      "name": "保養"
+      "name": "舊電腦",
+      "group": "場景"
     },
     {
       "id": 175,
-      "name": "啱唔啱我"
+      "name": "價錢",
+      "group": "場景"
     },
     {
       "id": 176,
-      "name": "中小企"
+      "name": "方案",
+      "group": "場景"
     },
     {
       "id": 177,
-      "name": "企業團隊"
+      "name": "角色",
+      "group": "場景"
     },
     {
       "id": 178,
-      "name": "開始"
+      "name": "保養",
+      "group": "場景"
     },
     {
       "id": 179,
-      "name": "時間"
+      "name": "啱唔啱我",
+      "group": "場景"
     },
     {
       "id": 180,
-      "name": "諮詢"
+      "name": "中小企",
+      "group": "客層"
     },
     {
       "id": 181,
-      "name": "轉換"
+      "name": "企業團隊",
+      "group": "客層"
+    },
+    {
+      "id": 182,
+      "name": "開始",
+      "group": "場景"
+    },
+    {
+      "id": 183,
+      "name": "時間",
+      "group": "場景"
+    },
+    {
+      "id": 184,
+      "name": "諮詢",
+      "group": "場景"
+    },
+    {
+      "id": 185,
+      "name": "轉換",
+      "group": "痛症類別"
     }
   ],
   "faqs": [

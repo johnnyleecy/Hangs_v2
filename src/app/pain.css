@@ -1,0 +1,29 @@
+.pain{min-height:100vh;background:#f7faf9;color:#1a2333;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.65}
+.pain-layout{max-width:1080px;margin:0 auto;padding:32px 20px 70px;display:flex;gap:24px;align-items:flex-start}
+.pain-main{flex:1;min-width:0;background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:30px}
+.pain-cat{display:inline-block;font-size:12px;font-weight:700;background:#eef2f7;color:#475569;padding:3px 12px;border-radius:20px;margin-bottom:14px}
+.pain-main h1{font-size:24px;color:#0f172a;margin:0 0 10px;line-height:1.4}
+.pain-aud{font-size:13px;color:#64748b;margin-bottom:18px}
+.pain-body{font-size:15px;color:#334155;white-space:pre-wrap}
+.pain-ratings{margin-top:22px;border-top:1px solid #e5e7eb;padding-top:18px}
+.pain-ratings-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:12px}
+.pain-tier{display:flex;gap:14px;padding:14px;border:1px solid #e5e7eb;border-radius:12px;margin-bottom:10px}
+.pain-tier.hot{border-color:#16a34a;background:#f4fbf7}
+.pain-stars{flex:none;font-size:17px;color:#f5a623;letter-spacing:1px;line-height:1.4}
+.pain-stars .off{color:#d8dee6}
+.pain-tier-body{flex:1;min-width:0}
+.pain-tier-level{font-weight:700;font-size:14px;color:#0f172a}
+.pain-tier-desc{font-size:13px;color:#475569;margin-top:4px}
+.pain-ref{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;color:#009c6f;text-decoration:none}
+.pain-ref.course{color:#0284c7;margin-left:14px}
+.pain-ref:hover{text-decoration:underline}
+.pain-cta{margin-top:20px;font-size:15px;color:#0f172a;font-weight:600;background:#f0fdf4;border-left:4px solid #16a34a;padding:12px 16px;border-radius:8px}
+.pain-next{display:inline-block;margin-top:16px;font-size:14px;font-weight:700;color:#fff;background:#0f172a;padding:11px 18px;border-radius:9px;text-decoration:none}
+.pain-next:hover{background:#1e293b}
+.pain-side{width:280px;flex:none;background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:20px;position:sticky;top:24px}
+.pain-side h3{font-size:15px;font-weight:700;color:#0f172a;margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid #eef2f7}
+.pain-side-item{display:block;font-size:13.5px;color:#334155;text-decoration:none;padding:9px 0;border-bottom:1px dashed #eef2f7}
+.pain-side-item:last-child{border-bottom:none}
+.pain-side-item:hover{color:#009c6f}
+.pain-side-empty{font-size:13px;color:#94a3b8}
+@media(max-width:800px){.pain-layout{flex-direction:column}.pain-side{width:100%;position:static}}

@@ -7,12 +7,13 @@ export type DbShape = {
   posts: any[];
   solutions: any[];
   cases: any[];
+  courses: any[];
   tags: any[];
   faqs: any[];
   painPoints: any[];
 };
 
-const EMPTY: DbShape = { posts: [], solutions: [], cases: [], tags: [], faqs: [], painPoints: [] };
+const EMPTY: DbShape = { posts: [], solutions: [], cases: [], courses: [], tags: [], faqs: [], painPoints: [] };
 
 export async function readDb(): Promise<DbShape> {
   try {
@@ -39,4 +40,4 @@ export async function writeCollection<K extends keyof DbShape>(name: K, items: D
   await writeDb(db);
 }
 
-export const COLLECTIONS: (keyof DbShape)[] = ['posts', 'solutions', 'cases', 'tags', 'faqs', 'painPoints'];
+export const COLLECTIONS: (keyof DbShape)[] = ['posts', 'solutions', 'cases', 'courses', 'tags', 'faqs', 'painPoints'];

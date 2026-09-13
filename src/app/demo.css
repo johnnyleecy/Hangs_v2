@@ -1,0 +1,26 @@
+.demo{min-height:100vh;background:#f7faf9;color:#1a2333;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.6}
+.demo-hero{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;text-align:center;padding:44px 20px}
+.demo-hero h1{margin:0 0 8px;font-size:28px}
+.demo-hero p{margin:0 0 14px;color:#cbd5e1;font-size:15px}
+.demo-tag{display:inline-block;background:#16a34a;color:#fff;font-weight:700;font-size:13px;padding:5px 16px;border-radius:20px}
+.demo-section{max-width:1080px;margin:0 auto;padding:32px 20px}
+.demo-section h2{font-size:19px;color:#0f172a;margin:0 0 18px}
+.demo-flow{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.demo-node{flex:1 1 240px;min-width:220px;border-radius:14px;padding:18px;background:#fff;border:1px solid #e5e7eb}
+.demo-node.node-1{border-top:4px solid #94a3b8}
+.demo-node.node-2{border-top:4px solid #16a34a}
+.demo-node.node-3{border-top:4px solid #0ea5e9}
+.demo-node-tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:10px;background:#f1f5f9;color:#475569}
+.demo-node-title{font-size:15px;font-weight:600;color:#0f172a;margin-bottom:6px}
+.demo-node-sub{font-size:13px;color:#64748b}
+.demo-arrow{align-self:center;font-size:14px;font-weight:700;color:#009c6f;white-space:nowrap;flex:none}
+.demo-cols{display:flex;gap:14px;flex-wrap:wrap}
+.demo-col{flex:1 1 280px;min-width:250px;border:1px solid #e5e7eb;border-radius:14px;background:#fff;overflow:hidden}
+.demo-col-head{background:#0f172a;color:#fff;font-size:14px;font-weight:700;padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
+.demo-col-head span{background:#16a34a;border-radius:20px;font-size:12px;padding:1px 10px}
+.demo-col-list{list-style:none;margin:0;padding:12px 16px;max-height:420px;overflow:auto}
+.demo-col-list li{font-size:13.5px;color:#334155;padding:5px 0;border-bottom:1px dashed #eef2f7}
+.demo-col-list li:last-child{border-bottom:none}
+.demo-col-list li.case{color:#009c6f;font-size:12.5px}
+.demo-foot{max-width:1080px;margin:0 auto;padding:0 20px 48px;text-align:center;font-size:13px;color:#94a3b8}
+.demo-foot code{background:#eef2f7;padding:1px 6px;border-radius:6px;font-size:12px}
